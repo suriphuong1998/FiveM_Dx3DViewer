@@ -24,17 +24,16 @@ Không phải script FiveM. Chạy trên PC Windows, không cần vào game đ�
 | Số model tải mỗi lần | 50 | 1000 | Không giới hạn |
 | Xuất file model | Không | Có | Có |
 | Xuất ảnh / clip preview | Không | Không | Có |
-| Số máy | 1 | 1 | 1 |
 
 ---
 
 ## Cài trên máy
 
-**Cần**
+**Yêu cầu**
 
 * Windows 10/11 64-bit
 * [Desktop Runtime .NET 10 x64](https://dotnet.microsoft.com/download/dotnet/10.0) (bản Desktop, không phải ASP.NET)
-* Mạng lúc cài lần đầu và lúc kích hoạt
+
 
 **Các bước**
 
