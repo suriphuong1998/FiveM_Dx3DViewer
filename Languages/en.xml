@@ -54,7 +54,7 @@
   <String Key="export_browse">Choose export folder</String>
   <String Key="export_need_path">Choose an export folder.</String>
   <String Key="export_shot">Include screenshot</String>
-  <String Key="export_shot_hint">WebP of the 3D view (animated if the model has a YCD clip).</String>
+  <String Key="export_shot_hint">YCD models export as video (WebM/MP4). GIF if ffmpeg is missing. Still models: WebP.</String>
   <String Key="export_empty">Tick the box, right-click, or press Space to select / deselect.</String>
   <String Key="no_folder">No folders yet</String>
   <String Key="hint_add">Click Add folder to start.</String>
@@ -66,6 +66,8 @@
   <String Key="folders_load">Loaded {0}/{1} folder(s)</String>
   <String Key="loading_folder">Loading {0}…</String>
   <String Key="listing">Listing files…</String>
+  <String Key="scan_empty">No models (.ydr / .ydd / .yft) in {0}.</String>
+  <String Key="scan_ok">Loaded {0} models from {1}.</String>
   <String Key="sorting">Sorting…</String>
   <String Key="scan_res">Scanning resources…</String>
   <String Key="read_keys">Reading GTA V keys…</String>
@@ -94,6 +96,8 @@
   <String Key="export_shots">Capturing previews…</String>
   <String Key="shot_of">Image · {0}</String>
   <String Key="shot_frames">{0} · frame {1}/{2}</String>
+  <String Key="shot_crop">{0} · crop {1}/{2}</String>
+  <String Key="shot_encode">{0} · encode {1}/{2}</String>
   <String Key="start">Starting…</String>
   <String Key="license">License status</String>
   <String Key="machine">Machine ID (send this to receive a key)</String>
@@ -105,11 +109,14 @@
   <String Key="already">Activated</String>
   <String Key="copied_id">Machine ID copied.</String>
   <String Key="copied_ver">Version info copied.</String>
+  <String Key="copied_short">Copied</String>
   <String Key="act_ok">Activation successful.</String>
   <String Key="act_bad">Key is not valid for this PC.</String>
   <String Key="act_unknown_key">This is not a valid license key. Copy the DX3D-… key shown once when it was created — not the table ID.</String>
   <String Key="act_not_key">That is the machine ID or an internal ID, not the license key. Create a key on /admin and copy DX3D-…</String>
   <String Key="act_machine_limit">This key is already bound to another PC.</String>
+  <String Key="act_in_use">This key is in use in another window. Close that app first.</String>
+  <String Key="license_in_use">key in use on another session</String>
   <String Key="license_need">3D preview and export require an active license.</String>
   <String Key="license_need_sub">Enter the key you were given. This PC is bound to the machine ID below.</String>
   <String Key="license_need_export">Export requires Pro or Premium. Activate a key below.</String>
@@ -126,8 +133,13 @@
   <String Key="plan_pro">Pro</String>
   <String Key="plan_premium">Premium</String>
   <String Key="plan_free_feat">• Load up to 50 models\n• 3D preview\n• No export\n• 1 PC</String>
-  <String Key="plan_pro_feat">• Load up to 1000 models\n• 3D preview\n• Export models\n• No preview screenshots\n• 1 PC</String>
+  <String Key="plan_pro_feat">• Load up to 2000 models\n• 3D preview\n• Export models\n• No preview screenshots\n• 1 PC</String>
   <String Key="plan_premium_feat">• Unlimited models\n• 3D preview\n• Export models\n• Export preview screenshots\n• 1 PC</String>
+  <String Key="plan_free_price">$0</String>
+  <String Key="plan_upgrade">Upgrade to Premium · {0}</String>
+  <String Key="plan_downgrade">Switch to Pro · {0}</String>
+  <String Key="plan_changed">Plan updated.</String>
+  <String Key="plan_same">Already on this plan.</String>
   <String Key="license_need_pro_models">Pro loads at most {0} models. Activate Premium for unlimited.</String>
   <String Key="license_need_free_res">Free can save {0} resource folder. Activate Pro for up to 5, or Premium for unlimited.</String>
   <String Key="license_need_pro_res">Pro can save {0} resource folders. Activate Premium for unlimited.</String>
@@ -173,7 +185,7 @@
   <String Key="update_restart">Download finished. The app will close; open it again to apply files.</String>
   <String Key="map">Map</String>
   <String Key="ped">Ped</String>
-  <String Key="copy_version">Copy version info</String>
+  <String Key="copy_version">Copy license info</String>
   <String Key="version_fmt">Version {0}</String>
   <String Key="hud_help_click">Click here for help</String>
   <String Key="hud_cam">Camera</String>

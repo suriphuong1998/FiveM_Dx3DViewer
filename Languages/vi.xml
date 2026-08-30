@@ -53,7 +53,7 @@
   <String Key="export_browse">Chọn thư mục xuất</String>
   <String Key="export_need_path">Chọn thư mục xuất.</String>
   <String Key="export_shot">Xuất kèm hình ảnh</String>
-  <String Key="export_shot_hint">Ảnh WebP khung nhìn 3D (động nếu model có YCD). Có ffmpeg thì thêm WebM.</String>
+  <String Key="export_shot_hint">Model có YCD: xuất video (WebM/MP4). Không có ffmpeg thì GIF. Model tĩnh: ảnh WebP.</String>
   <String Key="export_empty">Đánh dấu ô, chuột phải hoặc Space để chọn / bỏ chọn</String>
   <String Key="no_folder">Chưa có thư mục</String>
   <String Key="hint_add">Bấm Thêm thư mục để bắt đầu.</String>
@@ -65,6 +65,8 @@
   <String Key="folders_load">Đã tải {0}/{1} thư mục</String>
   <String Key="loading_folder">Đang tải {0}…</String>
   <String Key="listing">Đang liệt kê tệp…</String>
+  <String Key="scan_empty">Không thấy model (.ydr / .ydd / .yft) trong {0}.</String>
+  <String Key="scan_ok">Đã tải {0} model từ {1}.</String>
   <String Key="sorting">Đang sắp xếp…</String>
   <String Key="scan_res">Đang quét tài nguyên…</String>
   <String Key="read_keys">Đang đọc khóa GTA V…</String>
@@ -93,6 +95,8 @@
   <String Key="export_shots">Đang chụp ảnh…</String>
   <String Key="shot_of">Ảnh · {0}</String>
   <String Key="shot_frames">{0} · khung {1}/{2}</String>
+  <String Key="shot_crop">{0} · cắt {1}/{2}</String>
+  <String Key="shot_encode">{0} · ghi clip {1}/{2}</String>
   <String Key="start">Bắt đầu…</String>
   <String Key="license">Trạng thái bản quyền</String>
   <String Key="machine">Mã máy (gửi mã này để nhận key)</String>
@@ -104,11 +108,14 @@
   <String Key="already">Đã kích hoạt</String>
   <String Key="copied_id">Đã sao chép mã máy.</String>
   <String Key="copied_ver">Đã sao chép thông tin phiên bản.</String>
+  <String Key="copied_short">Đã sao chép</String>
   <String Key="act_ok">Kích hoạt thành công.</String>
   <String Key="act_bad">Mã không hợp lệ với máy này.</String>
   <String Key="act_unknown_key">Key không đúng. Copy key lúc tạo (bắt đầu bằng DX3D-), không copy cột ID trên bảng admin.</String>
   <String Key="act_not_key">Đó là mã máy hoặc ID nội bộ, không phải key. Vào /admin bấm Tạo key rồi copy dòng DX3D-…</String>
   <String Key="act_machine_limit">Key này đã gắn máy khác.</String>
+  <String Key="act_in_use">Key đang dùng trên cửa sổ khác. Đóng app 1 rồi mở lại.</String>
+  <String Key="license_in_use">key đang dùng phiên khác</String>
   <String Key="license_need">Xem 3D và xuất file cần bản quyền đang hoạt động.</String>
   <String Key="license_need_sub">Nhập key đã nhận. Máy này gắn với mã máy bên dưới.</String>
   <String Key="license_need_export">Xuất file cần gói Pro hoặc Premium. Kích hoạt key bên dưới.</String>
@@ -125,8 +132,13 @@
   <String Key="plan_pro">Pro</String>
   <String Key="plan_premium">Premium</String>
   <String Key="plan_free_feat">• Tải tối đa 50 model\n• Xem 3D\n• Không xuất file\n• 1 máy</String>
-  <String Key="plan_pro_feat">• Tải tối đa 1000 model\n• Xem 3D\n• Xuất model\n• Không xuất ảnh preview\n• 1 máy</String>
+  <String Key="plan_pro_feat">• Tải tối đa 2000 model\n• Xem 3D\n• Xuất model\n• Không xuất ảnh preview\n• 1 máy</String>
   <String Key="plan_premium_feat">• Không giới hạn model\n• Xem 3D\n• Xuất model\n• Xuất ảnh preview\n• 1 máy</String>
+  <String Key="plan_free_price">$0</String>
+  <String Key="plan_upgrade">Nâng Premium · {0}</String>
+  <String Key="plan_downgrade">Xuống Pro · {0}</String>
+  <String Key="plan_changed">Đã đổi gói.</String>
+  <String Key="plan_same">Đang dùng gói này.</String>
   <String Key="license_need_pro_models">Pro chỉ tải tối đa {0} model. Kích hoạt Premium để không giới hạn.</String>
   <String Key="license_need_free_res">Free lưu được {0} thư mục Resources. Kích hoạt Pro (tối đa 5) hoặc Premium (không giới hạn).</String>
   <String Key="license_need_pro_res">Pro lưu được {0} thư mục Resources. Kích hoạt Premium để không giới hạn.</String>
@@ -172,7 +184,7 @@
   <String Key="update_restart">Đã tải xong. App sẽ đóng; mở lại để áp dụng file mới.</String>
   <String Key="map">Bản đồ</String>
   <String Key="ped">Nhân vật</String>
-  <String Key="copy_version">Sao chép thông tin phiên bản</String>
+  <String Key="copy_version">Sao chép thông tin bản quyền</String>
   <String Key="version_fmt">Phiên bản {0}</String>
   <String Key="hud_help_click">Bấm vào đây để xem trợ giúp</String>
   <String Key="hud_cam">Máy quay</String>

@@ -53,7 +53,7 @@
   <String Key="export_browse">เลือกโฟลเดอร์ส่งออก</String>
   <String Key="export_need_path">เลือกโฟลเดอร์ส่งออก</String>
   <String Key="export_shot">รวมภาพหน้าจอ</String>
-  <String Key="export_shot_hint">WebP ของมุมมอง 3D (เคลื่อนไหวถ้าโมเดลมีคลิป YCD)</String>
+  <String Key="export_shot_hint">โมเดลที่มี YCD ส่งออกเป็นวิดีโอ (WebM/MP4) ไม่มี ffmpeg จะเป็น GIF โมเดลนิ่ง: WebP</String>
   <String Key="export_empty">ติ๊กช่อง คลิกขวา หรือกด Space เพื่อเลือก / ยกเลิกเลือก</String>
   <String Key="no_folder">ยังไม่มีโฟลเดอร์</String>
   <String Key="hint_add">คลิกเพิ่มโฟลเดอร์เพื่อเริ่ม</String>
@@ -65,6 +65,8 @@
   <String Key="folders_load">โหลดแล้ว {0}/{1} โฟลเดอร์</String>
   <String Key="loading_folder">กำลังโหลด {0}…</String>
   <String Key="listing">กำลังแสดงไฟล์…</String>
+  <String Key="scan_empty">ไม่พบโมเดล (.ydr / .ydd / .yft) ใน {0}</String>
+  <String Key="scan_ok">โหลด {0} โมเดลจาก {1}</String>
   <String Key="sorting">กำลังจัดเรียง…</String>
   <String Key="scan_res">กำลังสแกนทรัพยากร…</String>
   <String Key="read_keys">กำลังอ่านคีย์ GTA V…</String>
@@ -93,6 +95,8 @@
   <String Key="export_shots">กำลังจับภาพตัวอย่าง…</String>
   <String Key="shot_of">ภาพ · {0}</String>
   <String Key="shot_frames">{0} · เฟรม {1}/{2}</String>
+  <String Key="shot_crop">{0} · ครอป {1}/{2}</String>
+  <String Key="shot_encode">{0} · เข้ารหัส {1}/{2}</String>
   <String Key="start">กำลังเริ่ม…</String>
   <String Key="license">สถานะลิขสิทธิ์</String>
   <String Key="machine">รหัสเครื่อง (ส่งรหัสนี้เพื่อรับคีย์)</String>
@@ -104,11 +108,14 @@
   <String Key="already">เปิดใช้งานแล้ว</String>
   <String Key="copied_id">คัดลอกรหัสเครื่องแล้ว</String>
   <String Key="copied_ver">คัดลอกข้อมูลเวอร์ชันแล้ว</String>
+  <String Key="copied_short">คัดลอกแล้ว</String>
   <String Key="act_ok">เปิดใช้งานสำเร็จ</String>
   <String Key="act_bad">คีย์ไม่ถูกต้องกับเครื่องนี้</String>
   <String Key="act_unknown_key">คีย์ไม่ถูกต้อง คัดลอกคีย์ตอนสร้าง (ขึ้นต้น DX3D-) ห้ามคัดลอกคอลัมน์ ID</String>
   <String Key="act_not_key">นั่นคือรหัสเครื่องหรือ ID ภายใน ไม่ใช่คีย์ ไป /admin สร้างคีย์แล้วคัดลอก DX3D-…</String>
   <String Key="act_machine_limit">คีย์นี้ผูกเครื่องอื่นแล้ว</String>
+  <String Key="act_in_use">คีย์นี้กำลังใช้ในหน้าต่างอื่น ปิดแอปนั้นก่อน</String>
+  <String Key="license_in_use">คีย์ถูกใช้ในเซสชันอื่น</String>
   <String Key="license_need">การดู 3D และการส่งออกต้องมีลิขสิทธิ์ที่ใช้งานอยู่</String>
   <String Key="license_need_sub">ใส่คีย์ที่ได้รับ เครื่องนี้ผูกกับรหัสเครื่องด้านล่าง</String>
   <String Key="license_need_export">การส่งออกต้องใช้แพ็ก Pro หรือ Premium เปิดใช้คีย์ด้านล่าง</String>
@@ -125,8 +132,13 @@
   <String Key="plan_pro">Pro</String>
   <String Key="plan_premium">Premium</String>
   <String Key="plan_free_feat">• โหลดได้สูงสุด 50 โมเดล\n• ดู 3D\n• ไม่ส่งออกไฟล์\n• 1 เครื่อง</String>
-  <String Key="plan_pro_feat">• โหลดได้สูงสุด 1000 โมเดล\n• ดู 3D\n• ส่งออกโมเดล\n• ไม่ส่งออกรูปพรีวิว\n• 1 เครื่อง</String>
+  <String Key="plan_pro_feat">• โหลดได้สูงสุด 2000 โมเดล\n• ดู 3D\n• ส่งออกโมเดล\n• ไม่ส่งออกรูปพรีวิว\n• 1 เครื่อง</String>
   <String Key="plan_premium_feat">• โมเดลไม่จำกัด\n• ดู 3D\n• ส่งออกโมเดล\n• ส่งออกรูปพรีวิว\n• 1 เครื่อง</String>
+  <String Key="plan_free_price">$0</String>
+  <String Key="plan_upgrade">อัปเกรด Premium · {0}</String>
+  <String Key="plan_downgrade">เปลี่ยนเป็น Pro · {0}</String>
+  <String Key="plan_changed">เปลี่ยนแพ็กแล้ว</String>
+  <String Key="plan_same">ใช้แพ็กนี้อยู่แล้ว</String>
   <String Key="license_need_pro_models">Pro โหลดได้สูงสุด {0} โมเดล เปิดใช้ Premium เพื่อไม่จำกัด</String>
   <String Key="license_need_free_res">Free บันทึกโฟลเดอร์ Resources ได้ {0} อัน เปิดใช้ Pro (สูงสุด 5) หรือ Premium (ไม่จำกัด)</String>
   <String Key="license_need_pro_res">Pro บันทึกโฟลเดอร์ Resources ได้ {0} อัน เปิดใช้ Premium เพื่อไม่จำกัด</String>
@@ -172,7 +184,7 @@
   <String Key="update_restart">ดาวน์โหลดแล้ว แอปจะปิด เปิดอีกครั้งเพื่อใช้ไฟล์ใหม่</String>
   <String Key="map">แผนที่</String>
   <String Key="ped">ตัวละคร</String>
-  <String Key="copy_version">คัดลอกข้อมูลเวอร์ชัน</String>
+  <String Key="copy_version">คัดลอกข้อมูลลิขสิทธิ์</String>
   <String Key="version_fmt">เวอร์ชัน {0}</String>
   <String Key="hud_help_click">คลิกที่นี่เพื่อดูวิธีใช้</String>
   <String Key="hud_cam">กล้อง</String>
