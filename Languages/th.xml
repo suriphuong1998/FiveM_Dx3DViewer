@@ -101,7 +101,7 @@
   <String Key="license">สถานะลิขสิทธิ์</String>
   <String Key="machine">รหัสเครื่อง (ส่งรหัสนี้เพื่อรับคีย์)</String>
   <String Key="act_key">คีย์เปิดใช้งาน</String>
-  <String Key="act_hint">วางคีย์ลูกค้าแบบ DX3D-XXXX-XXXX-XXXX-XXXX ห้ามวางรหัสเครื่องหรือคอลัมน์ ID ใน /admin</String>
+  <String Key="act_hint">วางคีย์รูปแบบ DX3D-XXXX-XXXX-XXXX-XXXX</String>
   <String Key="activate">เปิดใช้งาน</String>
   <String Key="activated">มีลิขสิทธิ์แล้ว</String>
   <String Key="not_licensed">ยังไม่เปิดใช้งาน</String>

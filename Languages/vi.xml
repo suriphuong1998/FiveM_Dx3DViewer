@@ -101,7 +101,7 @@
   <String Key="license">Trạng thái bản quyền</String>
   <String Key="machine">Mã máy (gửi mã này để nhận key)</String>
   <String Key="act_key">Mã kích hoạt</String>
-  <String Key="act_hint">Dán key khách dạng DX3D-XXXX-XXXX-XXXX-XXXX. Không dán mã máy, cũng không dán cột ID trên /admin.</String>
+  <String Key="act_hint">Dán key có dạng DX3D-XXXX-XXXX-XXXX-XXXX.</String>
   <String Key="activate">Kích hoạt</String>
   <String Key="activated">Đã kích hoạt bản quyền</String>
   <String Key="not_licensed">Chưa kích hoạt</String>

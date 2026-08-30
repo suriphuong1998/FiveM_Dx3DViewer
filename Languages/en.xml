@@ -102,7 +102,7 @@
   <String Key="license">License status</String>
   <String Key="machine">Machine ID (send this to receive a key)</String>
   <String Key="act_key">Activation key</String>
-  <String Key="act_hint">Paste the customer key DX3D-XXXX-XXXX-XXXX-XXXX. Do not paste Machine ID or the admin table ID.</String>
+  <String Key="act_hint">Paste a key like DX3D-XXXX-XXXX-XXXX-XXXX.</String>
   <String Key="activate">Activate</String>
   <String Key="activated">Licensed</String>
   <String Key="not_licensed">Not licensed</String>
